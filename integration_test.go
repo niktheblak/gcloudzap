@@ -16,8 +16,8 @@ import (
 
 	"cloud.google.com/go/logging"
 	"cloud.google.com/go/logging/logadmin"
-	"github.com/dhduvall/gcloudzap"
 	"github.com/golang/protobuf/ptypes/struct"
+	"github.com/niktheblak/gcloudzap"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 	"google.golang.org/api/iterator"
@@ -255,7 +255,7 @@ func test_stacktrace(t *testing.T, ctx context.Context, aClient *logadmin.Client
 	stack, ok := m["stacktrace"]
 	assert.True(ok)
 	assert.True(strings.HasPrefix(stack.(string),
-		"github.com/dhduvall/gcloudzap_test.test_stacktrace"))
+		"github.com/niktheblak/gcloudzap_test.test_stacktrace"))
 }
 
 func TestIntegration(t *testing.T) {
