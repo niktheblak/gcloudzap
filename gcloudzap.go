@@ -23,7 +23,7 @@ Zap docs: https://godoc.org/go.uber.org/zap
 Stackdriver Logging docs: https://cloud.google.com/logging/docs/
 
 */
-package gcloudzap // import "github.com/dhduvall/gcloudzap"
+package gcloudzap
 
 import (
 	"context"
